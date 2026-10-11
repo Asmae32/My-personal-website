@@ -28,6 +28,25 @@ nav a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     padding: 2rem;
+    .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lifts the card slightly on hover */
+}
+
 }
 
 .card {
@@ -41,6 +60,20 @@ nav a {
     color: var(--pastel-blue); /* Uses your pastel blue */
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 0px var(--pastel-pink); /* Adds a sparkly pop */
+    /* Add this to your body or specific section in style.css */
+body {
+    background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-blue), var(--pastel-green), var(--pastel-orange));
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+/* This animation makes the colors slowly move to create a "sparkly" or "shimmering" effect */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 }
 
 .hero p {
