@@ -35,3 +35,20 @@ nav a {
     padding: 1rem;
     border-radius: 8px;
 }
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem; /* Makes the name very big */
+    color: var(--pastel-blue); /* Uses your pastel blue */
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 0px var(--pastel-pink); /* Adds a sparkly pop */
+}
+
+.hero p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+html {
+    scroll-behavior: smooth;
+}
