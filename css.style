@@ -140,3 +140,66 @@ footer {
     background-color: var(--dark-brown);
     color: var(--cream);
 }
+/* Experiences Section */
+.experiences {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experiences h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: var(--burgundy);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--light-pink);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* The dot on the timeline */
+.timeline-dot {
+    position: absolute;
+    left: -39px; /* Adjusts dot position to align with the line */
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--mustard);
+    border-radius: 50%;
+    border: 3px solid var(--cream);
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: var(--mustard);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.timeline-content h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--burgundy);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-content h4 {
+    font-weight: 600;
+    color: var(--dark-brown);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.timeline-content p {
+    color: var(--dark-brown);
+    line-height: 1.6;
+}
