@@ -1,88 +1,142 @@
+/* 1. Define the new colors */
+:root {
+    --burgundy: #7B2F3A;
+    --mustard: #C78F2A;
+    --light-pink: #E6B7B0;
+    --cream: #F1EDE9;
+    --dark-brown: #4A2E2D;
+}
+
+/* 2. Apply to the body */
 body {
-    font-family: sans-serif;
+    background-color: var(--cream); /* This sets the page background */
+    color: var(--dark-brown);
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
+    padding: 0;
     line-height: 1.6;
 }
 
+/* 3. Style the Navigation */
 nav {
+    background-color: var(--burgundy); /* Dark red top bar */
+    color: var(--cream);
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    background: #333;
-    color: white;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
-    color: white;
+    color: var(--cream);
     text-decoration: none;
+    font-weight: 700;
+}
+
+/* 4. Style the Hero Section (Your Name) */
+.hero {
+    background-color: var(--light-pink); /* Soft pink background */
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: var(--burgundy); /* Dark red text */
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--dark-brown);
+}
+
+/* 5. Style the Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-family: 'Pacifico', cursive;
+    color: var(--burgundy);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-    .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 2rem;
 }
 
 .card {
-    background: var(--white);
+    background-color: var(--cream);
+    border: 2px solid var(--light-pink);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft shadow */
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Lifts the card slightly on hover */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
+.card-content {
+    padding: 1.5rem;
 }
 
-.card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
+.card h3 {
+    color: var(--burgundy);
+    margin-top: 0;
 }
-.hero h1 {
+
+/* 6. Style the Contact Section */
+.contact {
+    background-color: var(--burgundy);
+    color: var(--cream);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.contact h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 4rem; /* Makes the name very big */
-    color: var(--pastel-blue); /* Uses your pastel blue */
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 0px var(--pastel-pink); /* Adds a sparkly pop */
-    /* Add this to your body or specific section in style.css */
-body {
-    background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-blue), var(--pastel-green), var(--pastel-orange));
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-/* This animation makes the colors slowly move to create a "sparkly" or "shimmering" effect */
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.btn {
+    display: inline-block;
+    background-color: var(--mustard); /* Golden button */
+    color: var(--cream);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
-}
-
-.hero p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    font-weight: 600;
-}
-html {
-    scroll-behavior: smooth;
-}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--dark-brown);
+    color: var(--cream);
 }

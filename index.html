@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/png" href="favicon.png">
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sparkly Portfolio</title>
+    <title>My Portfolio</title>
     
     <!-- Google Fonts: Pacifico and Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,26 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* CSS Variables for your Pastel Palette */
+        /* New Color Palette from your image */
         :root {
-            --pastel-pink: #FFD1DC;
-            --pastel-blue: #BFEFFF;
-            --pastel-green: #B0E0A8;
-            --pastel-orange: #FFCBA5;
-            --text-color: #4A4A4A; /* A soft dark gray for readability */
-            --white: #FFFFFF;
+            --burgundy: #7B2A2A;
+            --mustard: #C49A3C;
+            --light-pink: #E8B7B7;
+            --cream: #F2F2F2;
+            --dark-brown: #4A2E2E;
+            --soft-orange: #D78C3E;
         }
 
         body {
-            font-family: 'Quicksand', sans-serif; /* Body text font */
+            font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FAFAFA; /* Very light background */
-            color: var(--text-color);
+            background-color: var(--cream);
+            color: var(--dark-brown);
             line-height: 1.6;
         }
 
-        /* Pacifico for Titles */
         h1, h2, h3 {
             font-family: 'Pacifico', cursive;
             font-weight: 400;
@@ -39,17 +38,17 @@
 
         /* Navigation */
         nav {
-            background-color: var(--pastel-blue);
+            background-color: var(--burgundy);
             padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         nav h1 {
             margin: 0;
-            color: var(--white);
+            color: var(--cream);
             font-size: 1.8rem;
         }
 
@@ -63,18 +62,18 @@
 
         nav a {
             text-decoration: none;
-            color: var(--text-color);
+            color: var(--cream);
             font-weight: 700;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: var(--white);
+            color: var(--mustard);
         }
 
         /* Hero Section */
         .hero {
-            background-color: var(--pastel-pink);
+            background-color: var(--light-pink);
             text-align: center;
             padding: 4rem 2rem;
         }
@@ -82,14 +81,14 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
-            color: var(--white);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            color: var(--burgundy);
         }
 
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto;
+            color: var(--dark-brown);
         }
 
         /* Projects Section */
@@ -101,7 +100,7 @@
 
         .projects h2 {
             text-align: center;
-            color: var(--pastel-orange);
+            color: var(--burgundy);
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
@@ -113,12 +112,12 @@
         }
 
         .card {
-            background-color: var(--white);
+            background-color: var(--cream);
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 2px solid var(--light-pink);
             transition: transform 0.2s;
-            border: 2px solid var(--pastel-green);
         }
 
         .card:hover {
@@ -136,39 +135,41 @@
         }
 
         .card h3 {
-            color: var(--pastel-blue);
+            color: var(--burgundy);
             margin-top: 0;
         }
 
         /* Contact Section */
         .contact {
-            background-color: var(--pastel-green);
+            background-color: var(--burgundy);
             text-align: center;
             padding: 4rem 2rem;
-            color: var(--text-color);
+            color: var(--cream);
         }
 
         .contact h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: var(--cream);
         }
 
         .btn {
             display: inline-block;
-            background-color: var(--pastel-orange);
-            color: var(--white);
+            background-color: var(--mustard);
+            color: var(--cream);
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 25px;
             font-weight: 700;
             margin-top: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #f0f0f0;
+            background-color: var(--dark-brown);
+            color: var(--cream);
             font-size: 0.9rem;
         }
     </style>
@@ -178,7 +179,7 @@
     <nav>
         <h1>Asmae El Jazouli</h1>
         <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -186,7 +187,19 @@
 
     <section id="about" class="hero">
         <h1>Welcome to My Portfolio</h1>
-        <p>I am a High School student-athlete who loves creating solutions for problems that people like me face.</p>
+        <p>I am a High School student-athlete who loves creating solutions for problems that people like me go through.</p>
+    </section>
+    <section id="About me" class="contact">
+        <h2>About Me</h2>
+        <p>Hi!! I'm a high school student-athlete from Morocco passionate about computer science, technology, youth empowerement and competitive tennis. I enjoy challenging myself through coding, leadership opportunities, and continuous learning.
+
+I'm developing programming skills, preparing for university, participating in competitions, and building projects that strengthen my technical abilities while balancing competitive athletics.
+
+I'm currently building Horizons Youth Initiative (HYI), a youth-led community organization focused on empowering students through leadership, innovation, and community impact.
+
+I'm always excited to connect with students, educators, developers, and organizations that believe in education, innovation, and creating positive impact. 
+
+</p>
     </section>
 
     <section id="projects" class="projects">
@@ -195,7 +208,7 @@
             <!-- Project 1 -->
             <div class="card">
                 <!-- Replace src with your image URL -->
-                <img src="https://via.placeholder.com/400x200/BFEFFF/4A4A4A?text=Project+1" alt="Project 1">
+                <img src="https://via.placeholder.com/400x200/E8B7B7/4A2E2E?text=Project+1" alt="Project 1">
                 <div class="card-content">
                     <h3>The Anchor Project</h3>
                     <p>It is an an app to help other super busy and ambitious student-athletes like me manage their chaotic schedules, organize and track their 475836 extracurriculars and to-dos to improve their time-management, organization, avoid burnout and depression. PS: this is just a simple MVP, it will be developed and improved later on.
@@ -205,19 +218,19 @@
 
             <!-- Project 2 -->
             <div class="card">
-                <img src="https://via.placeholder.com/400x200/FFD1DC/4A4A4A?text=Project+2" alt="Project 2">
+                <img src="https://via.placeholder.com/400x200/C49A3C/4A2E2E?text=Project+2" alt="Project 2">
                 <div class="card-content">
-                    <h3>Horizon Youth Innovators</h3>
-                    <p>It is a youth-led community organization for ambitious Moroccan high school student. The goal is to create a community for ambitious Moroccan high school students and to empower, help, connect and mentor ambitious Moroccan high school students through personalized mentoring, various activities, events, workshops, etc that are both fun and educational for it to not feel like a chore but more like an investment of their time, ideas and skills.</p>
+                    <h3>My Blog: Young Girl Big Goals</h3>
+                    <p>An independent blog as a space to write, explore ideas, and share what I’m learning along the way. I write about student life, ambitious goals, technology, learning, youth opportunities, and the messy process of turning ideas into reality. </p>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="card">
-                <img src="https://via.placeholder.com/400x200/B0E0A8/4A4A4A?text=Project+3" alt="Project 3">
+                <img src="https://via.placeholder.com/400x200/7B2A2A/F2F2F2?text=Project+3" alt="Project 3">
                 <div class="card-content">
-                    <h3>Young Girl Big Goals</h3>
-                    <p>An independent blog as a space to write, explore ideas, and share what I’m learning along the way. I write about student life, ambitious goals, technology, learning, youth opportunities, and the messy process of turning ideas into reality. </p>
+                    <h3>Horizon Youth Innovators</h3>
+                    <p>It is a youth-led community organization for ambitious Moroccan high school student. The goal is to create a community for ambitious Moroccan high school students and to empower, help, connect and mentor ambitious Moroccan high school students through personalized mentoring, various activities, events, workshops, etc that are both fun and educational for it to not feel like a chore but more like an investment of their time, ideas and skills.</p>
                 </div>
             </div>
         </div>
