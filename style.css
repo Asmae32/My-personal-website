@@ -9,7 +9,7 @@
 
 /* 2. Apply to the body */
 body {
-    background-color: var(--cream); /* This sets the page background */
+    background-color: var(--cream);
     color: var(--dark-brown);
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -19,7 +19,7 @@ body {
 
 /* 3. Style the Navigation */
 nav {
-    background-color: var(--burgundy); /* Dark red top bar */
+    background-color: var(--burgundy);
     color: var(--cream);
     padding: 1rem 2rem;
     display: flex;
@@ -46,9 +46,9 @@ nav a {
     font-weight: 700;
 }
 
-/* 4. Style the Hero Section (Your Name) */
+/* 4. Style the Hero Section */
 .hero {
-    background-color: var(--light-pink); /* Soft pink background */
+    background-color: var(--light-pink);
     text-align: center;
     padding: 4rem 2rem;
 }
@@ -56,7 +56,7 @@ nav a {
 .hero h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
-    color: var(--burgundy); /* Dark red text */
+    color: var(--burgundy);
     margin-bottom: 0.5rem;
 }
 
@@ -125,7 +125,7 @@ nav a {
 
 .btn {
     display: inline-block;
-    background-color: var(--mustard); /* Golden button */
+    background-color: var(--mustard);
     color: var(--cream);
     padding: 10px 20px;
     text-decoration: none;
@@ -140,6 +140,7 @@ footer {
     background-color: var(--dark-brown);
     color: var(--cream);
 }
+
 /* 7. Style the Experiences Section */
 .experiences {
     padding: 4rem 2rem;
@@ -166,10 +167,9 @@ footer {
     margin-bottom: 3rem;
 }
 
-/* The dot on the timeline */
 .timeline-dot {
     position: absolute;
-    left: -39px; /* Adjusts dot position to align with the line */
+    left: -39px;
     top: 0;
     width: 16px;
     height: 16px;
@@ -203,11 +203,11 @@ footer {
     color: var(--dark-brown);
     line-height: 1.6;
 }
-}
-/* 8.Style the Interests Section */
+
+/* 8. Style the Interests Section */
 .interests {
     padding: 4rem 2rem;
-    background-color: var(--light-pink); /* Uses your palette's light pink */
+    background-color: var(--light-pink);
 }
 
 .interests h2 {
