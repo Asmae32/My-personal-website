@@ -335,3 +335,67 @@ footer {
     color: var(--secondary) !important;
     transform: scale(1.2);
 }
+/* 11. Style the Education Section */
+.education {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--cream);
+}
+
+.education h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Reuse the timeline styles from Experiences */
+.education .timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--accent);
+}
+
+.education .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.education .timeline-dot {
+    position: absolute;
+    left: -39px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+
+.education .timeline-date {
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.education .timeline-content h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.education .timeline-content h4 {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.education .timeline-content p {
+    color: var(--text);
+    line-height: 1.6;
+}
