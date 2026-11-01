@@ -1,16 +1,18 @@
 /* 1. Define the new colors */
 :root {
-    --burgundy: #7B2F3A;
-    --mustard: #C78F2A;
-    --light-pink: #E6B7B0;
-    --cream: #F1EDE9;
-    --dark-brown: #4A2E2D;
+    --primary: #005F73;     /* Deep Teal */
+    --secondary: #0A9396;   /* Vibrant Teal */
+    --accent: #94D2BD;      /* Mint Green */
+    --background: #E9D8A6;  /* Warm Sand */
+    --text: #001219;        /* Dark Charcoal */
+    --cream: #F1EDE9;       /* Cream */
+    --white: #FFFFFF;
 }
 
 /* 2. Apply to the body */
 body {
     background-color: var(--cream);
-    color: var(--dark-brown);
+    color: var(--text);
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,8 +21,8 @@ body {
 
 /* 3. Style the Navigation */
 nav {
-    background-color: var(--burgundy);
-    color: var(--cream);
+    background-color: var(--primary);
+    color: var(--white);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -41,14 +43,19 @@ nav ul {
 }
 
 nav a {
-    color: var(--cream);
+    color: var(--white);
     text-decoration: none;
     font-weight: 700;
+    transition: color 0.3s;
 }
 
-/* 4. Style the Hero Section */
+nav a:hover {
+    color: var(--accent);
+}
+
+/* 4. Style the Hero Section (About Me) - MINT GREEN */
 .hero {
-    background-color: var(--light-pink);
+    background-color: var(--accent);
     text-align: center;
     padding: 4rem 2rem;
 }
@@ -56,25 +63,185 @@ nav a {
 .hero h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
-    color: var(--burgundy);
+    color: var(--primary);
     margin-bottom: 0.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: var(--dark-brown);
+    color: var(--text);
 }
 
-/* 5. Style the Projects Section */
+/* 5. Style the Experiences Section - CREAM */
+.experiences {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--cream);
+}
+
+.experiences h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--accent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -39px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.timeline-content h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-content h4 {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.timeline-content p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* 6. Style the Skills Section */
+.skills {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills h2 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+/* 7. Style the Interests Section */
+.interests {
+    padding: 4rem 2rem;
+    background-color: var(--accent);
+}
+
+.interests h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.interest-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+}
+
+.interest-card i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.interest-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.interest-card p {
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+/* 8. Style the Projects Section - CREAM */
 .projects {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: var(--cream);
 }
 
 .projects h2 {
     font-family: 'Pacifico', cursive;
-    color: var(--burgundy);
+    color: var(--primary);
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -87,8 +254,8 @@ nav a {
 }
 
 .card {
-    background-color: var(--cream);
-    border: 2px solid var(--light-pink);
+    background-color: var(--white);
+    border: 2px solid var(--accent);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -105,14 +272,14 @@ nav a {
 }
 
 .card h3 {
-    color: var(--burgundy);
+    color: var(--primary);
     margin-top: 0;
 }
 
-/* 6. Style the Contact Section */
+/* 9. Style the Contact Section */
 .contact {
-    background-color: var(--burgundy);
-    color: var(--cream);
+    background-color: var(--primary);
+    color: var(--white);
     text-align: center;
     padding: 4rem 2rem;
 }
@@ -125,132 +292,26 @@ nav a {
 
 .btn {
     display: inline-block;
-    background-color: var(--mustard);
-    color: var(--cream);
+    background-color: var(--secondary);
+    color: var(--white);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 700;
     margin-top: 1rem;
+    transition: background-color 0.3s;
 }
 
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+/* 10. Style the Footer - CREAM */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--dark-brown);
-    color: var(--cream);
-}
-
-/* 7. Style the Experiences Section */
-.experiences {
-    padding: 4rem 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.experiences h2 {
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    color: var(--burgundy);
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.timeline {
-    position: relative;
-    padding-left: 30px;
-    border-left: 2px solid var(--light-pink);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -39px;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    background-color: var(--mustard);
-    border-radius: 50%;
-    border: 3px solid var(--cream);
-}
-
-.timeline-date {
-    font-weight: 700;
-    color: var(--mustard);
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.timeline-content h3 {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    color: var(--burgundy);
-    margin-bottom: 0.2rem;
-}
-
-.timeline-content h4 {
-    font-weight: 600;
-    color: var(--dark-brown);
-    margin-bottom: 0.5rem;
-    font-style: italic;
-}
-
-.timeline-content p {
-    color: var(--dark-brown);
-    line-height: 1.6;
-}
-
-/* 8. Style the Interests Section */
-.interests {
-    padding: 4rem 2rem;
-    background-color: var(--light-pink);
-}
-
-.interests h2 {
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    color: var(--burgundy);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.interest-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.interest-card {
     background-color: var(--cream);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
-}
-
-.interest-card:hover {
-    transform: translateY(-5px);
-}
-
-.interest-card i {
-    font-size: 2.5rem;
-    color: var(--mustard);
-    margin-bottom: 1rem;
-}
-
-.interest-card h3 {
-    color: var(--burgundy);
-    margin-bottom: 0.5rem;
-}
-
-.interest-card p {
-    color: var(--dark-brown);
-    font-size: 0.9rem;
+    color: var(--text);
+    border-top: 1px solid var(--accent);
 }

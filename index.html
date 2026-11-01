@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="profile.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -15,20 +15,20 @@
     <style>
         /* New Color Palette from your image */
         :root {
-            --burgundy: #7B2A2A;
-            --mustard: #C49A3C;
-            --light-pink: #E8B7B7;
-            --cream: #F2F2F2;
-            --dark-brown: #4A2E2E;
-            --soft-orange: #D78C3E;
-        }
+    --primary: #005F73;     /* Deep Teal */
+    --secondary: #0A9396;   /* Vibrant Teal */
+    --accent: #94D2BD;      /* Mint Green */
+    --background: #E9D8A6;  /* Warm Sand */
+    --text: #001219;        /* Dark Charcoal */
+    --white: #FFFFFF;
+}
 
         body {
             font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--cream);
-            color: var(--dark-brown);
+            background-color: var(--#94D2BD);
+            color: var(--text);
             line-height: 1.6;
         }
 
@@ -49,7 +49,7 @@
 
         nav h1 {
             margin: 0;
-            color: var(--cream);
+            color: var(--#005F73);
             font-size: 1.8rem;
         }
 
@@ -63,18 +63,18 @@
 
         nav a {
             text-decoration: none;
-            color: var(--cream);
+            color: var(--#005F73);
             font-weight: 700;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: var(--mustard);
+            color: var(--background);
         }
 
         /* Hero Section */
         .hero {
-            background-color: var(--light-pink);
+            background-color: var(--white);
             text-align: center;
             padding: 4rem 2rem;
         }
@@ -82,14 +82,14 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
-            color: var(--burgundy);
+            color: var(--#94D2BD);
         }
 
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto;
-            color: var(--dark-brown);
+            color: var(--text);
         }
 
         /* Projects Section */
@@ -101,7 +101,7 @@
 
         .projects h2 {
             text-align: center;
-            color: var(--burgundy);
+            color: var(--secondary);
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
@@ -136,13 +136,13 @@
         }
 
         .card h3 {
-            color: var(--burgundy);
+            color: var(--secondary);
             margin-top: 0;
         }
 
         /* Contact Section */
         .contact {
-            background-color: var(--burgundy);
+            background-color: var(--primary);
             text-align: center;
             padding: 4rem 2rem;
             color: var(--cream);
@@ -156,7 +156,7 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--mustard);
+            background-color: var(--background);
             color: var(--cream);
             padding: 10px 20px;
             text-decoration: none;
@@ -169,7 +169,7 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: var(--dark-brown);
+            background-color: var(--accent);
             color: var(--cream);
             font-size: 0.9rem;
         }
@@ -180,9 +180,12 @@
     <nav>
         <h1>Asmae El Jazouli</h1>
         <ul>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Connect</a></li>
         </ul>
     </nav>
 
@@ -243,6 +246,49 @@ I'm especially excited to strengthen my understanding of how data can be used to
                 </div>
             </div>
 
+<!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            
+            <!-- Skill 1 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <h3>Problem Solving</h3>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-users"></i>
+                <h3>Writing</h3>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="skill-item">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <h3>Project Management</h3>
+            </div>
+
+        </div>
+    </section>
 
         </div>
     </section>
