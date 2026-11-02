@@ -8,7 +8,6 @@
     --cream: #F1EDE9;       /* Cream */
     --white: #FFFFFF;
 }
-
 /* 2. Apply to the body */
 body {
     background-color: var(--cream);
@@ -18,7 +17,6 @@ body {
     padding: 0;
     line-height: 1.6;
 }
-
 /* 3. Style the Navigation */
 nav {
     background-color: var(--primary);
@@ -28,12 +26,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 nav h1 {
     margin: 0;
     font-family: 'Pacifico', cursive;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -41,37 +37,31 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 nav a {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
 }
-
 nav a:hover {
     color: var(--accent);
 }
-
 /* 4. Style the Hero Section (About Me) - MINT GREEN */
 .hero {
     background-color: var(--accent);
     text-align: center;
     padding: 4rem 2rem;
 }
-
 .hero h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
-
 .hero p {
     font-size: 1.2rem;
     color: var(--text);
 }
-
 /* 5. Style the Experiences Section - CREAM */
 .experiences {
     padding: 4rem 2rem;
@@ -87,18 +77,15 @@ nav a:hover {
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
-
 .timeline {
     position: relative;
     padding-left: 30px;
     border-left: 2px solid var(--accent);
 }
-
 .timeline-item {
     position: relative;
     margin-bottom: 3rem;
 }
-
 .timeline-dot {
     position: absolute;
     left: -39px;
@@ -109,21 +96,18 @@ nav a:hover {
     border-radius: 50%;
     border: 3px solid var(--white);
 }
-
 .timeline-date {
     font-weight: 700;
     color: var(--secondary);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
-
 .timeline-content h3 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.2rem;
 }
-
 .timeline-content h4 {
     font-weight: 600;
     color: var(--text);
