@@ -315,26 +315,6 @@ footer {
     color: var(--text);
     border-top: 1px solid var(--accent);
 }
-
-/* Social Links */
-.social-links {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-links a {
-    color: var(--primary) !important; /* Forces the color */
-    font-size: 1.5rem;
-    text-decoration: none !important;
-    transition: transform 0.2s, color 0.3s;
-}
-
-.social-links a:hover {
-    color: var(--secondary) !important;
-    transform: scale(1.2);
-}
 /* 11. Style the Education Section */
 .education {
     padding: 4rem 2rem;
